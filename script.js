@@ -20,7 +20,7 @@ function btnDesencriptar(){
 function btnCopiar(){
     const copiaTexto = document.querySelector(".texto-resultado").value;
     navigator.clipboard.writeText(copiaTexto)
-    textArea.value = "hidden";
+    mensaje.value = "";
 }
 
 function encriptar(stringEncriptado){

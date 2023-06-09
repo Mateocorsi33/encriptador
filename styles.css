@@ -1,27 +1,44 @@
-.resolution{
-    width: 100%;
+.body{
+    width: auto;
     margin: 0;
     background: #F3F5FC;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo{
     width: 25px;
     height: 32px;
-    margin-left: 50px;
-    padding-top: 30px;
+    margin-left: 3rem;
+    padding-top: 1.7rem;
 }
 
 .main{
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.texto{
-    margin-left: 7rem;
-    margin-top: 1rem;
-    text-transform:lowercase;
-    font-family: 'Inter', sans-serif;
+div > h1, h3, p , textarea {
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
+  }
+  
+
+.entrada{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 8rem;
+}
+
+
+.texto{
+    text-transform:lowercase;
     font-size: 26px;
     line-height: 150%;
     color: #0A3871;
@@ -38,10 +55,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: absolute;
-    padding-top: 3rem;
-    margin-left: 7rem;
-    gap: 8px;
+    padding-bottom: 1rem;
+    gap: 0.5rem;
 }
 
 .vector{
@@ -50,38 +65,24 @@
 }
 
 .regla{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 8px;
+    font-size: 10px;
     line-height: 150%;
     color: #495057;
     opacity: 0.8;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
-.botones{
+.btn-encri-desen{
     display: flex;
-    position: absolute;
+    flex-direction: row;
     width: 500px;
     height: 30px;
-    margin-left: 7rem;
-    padding-top: 4.5rem;
     gap: 24px;
+    align-items: flex-end;
 }
 
 .encriptar{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     width: 270px;
     height: 50px;
     color: #FFFFFF;
@@ -96,15 +97,8 @@
 }
 
 .desencriptar{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     width: 270px;
     height: 50px;
     color:#0A3871;
@@ -119,40 +113,29 @@
     background: #b3b7be;
 }
 
-
-.resultado{
-    position:absolute;
-    top: 30px;
-    width: 360px;
-    height: 590px;
-    left:960px;
-    border-radius: 32px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+.salida{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    margin-right: 3rem;
 }
 
 .muñeco{
-    position: absolute;
-    top:120px;
     width: 236px;
     height: 204px;
 }
 
-.texto-inicio{
+.img-texto-inicio{
     position: absolute;
     width: 236px;
     height: 22px;
-    top:330px;
+    padding-top: 6rem;
 }
 
 .titulo1{
-    width: 236px;
-    height: 30px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     text-align: center;
@@ -160,10 +143,6 @@
 }
 
 .parrafo{
-    width: 236px;
-    height: 28px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     text-align: center;
@@ -174,16 +153,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
 .texto-resultado{
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin: 1rem 1rem;
     border: none;
     text-transform:lowercase;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
@@ -195,19 +170,17 @@
 }
 
 .btn-copiar{
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     width: 240px;
     height: 40px;
-    margin-top: 1.2rem;
     color: #0A3871;
     background: #D8DFE8;
     border-radius: 10px;
     border: 1px solid #0A3871;
     cursor:pointer;
+    margin-bottom: 1rem;
 }
 
 .btn-copiar:hover{
@@ -215,32 +188,25 @@
     background-color: #b3b7be;
 }
 
+
 .footer{
-    position: absolute;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 125px;
-    left:0px;
-    right: 0px;
-    margin-top:10rem;
+    justify-content: space-between;
+    height: 120px;
     background-color: #0A3871;
+    margin-top: 2rem;
 }
 
 .datos{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-items: center;
-    position: absolute;
-    left:50px;
-    top:39px;
+    justify-content: center;
+    margin-left: 3rem;
     gap: 4px;
 }
 
 .nombre{
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -249,8 +215,6 @@
 }
 
 .puesto{
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: lighter;
     font-size: 16px;
     line-height: 19px;
@@ -261,13 +225,9 @@
 .iconos{
     display: flex;
 	flex-direction: row;
-	position: absolute;
     align-items: center;
-    width: 337px;
-    height: 34px;
-    left: 790px;
-    right: 0px;
-    top: 46px;
+    width: auto;
+    margin-right: 3rem;
 }
 
 .linkedin{
@@ -299,8 +259,6 @@
 }
 
 .email-direc{
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
@@ -315,13 +273,18 @@
 
 .numero{
     white-space: nowrap;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
     margin: 0 1rem 0 0;
     height: 19px;
-    top: 53px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+ 
+}
+
+@media only screen and (max-width: 600px) {
+
 }

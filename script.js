@@ -1,6 +1,6 @@
 const textArea = document.querySelector(".texto");
 const mensaje = document.querySelector(".texto-resultado");
-const inicio = document.querySelector(".texto-inicio")
+const inicio = document.querySelector(".img-texto-inicio")
 const muñeco = document.querySelector(".muñeco")
 
 function btnEncriptar(){
@@ -8,7 +8,6 @@ function btnEncriptar(){
     mensaje.value = textoEncriptado;
     textArea.value = "";
     inicio.style.visibility = "hidden";
-    muñeco.style.visibility = "hidden";
 }
 
 function btnDesencriptar(){

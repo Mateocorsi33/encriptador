@@ -13,50 +13,52 @@
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
         </head>
-        <body class="resolution">
-            <div class="container">
+
+        <body class="body">
                 <header class="header">
-                    <div>
                         <img class="logo" src="assets/logo.png" alt="logo">
-                    </div>
                 </header>
                 <main class="main">
-                    <textarea class="texto" cols="55" rows="10" type="text" placeholder="Ingrese el texto aqui" onkeypress="return (event.charCode != 225 && event.charCode != 233 && event.charCode != 237 && event.charCode != 243 && event.charCode != 250);"></textarea>
-                    <div class="condiciones">
-                        <img class="vector" src="assets/vector.png" alt="signo">
-                        <div class="regla">Solo letras minúsculas y sin acentos</div>
-                    </div>
-                    <div class="botones">
+                    <div class="entrada">
+                        <div>
+                            <textarea class="texto" cols="55" rows="11" type="text" placeholder="Ingrese el texto aqui" onkeypress="return (event.charCode != 225 && event.charCode != 233 && event.charCode != 237 && event.charCode != 243 && event.charCode != 250);"></textarea>
+                        </div>
+                        <div class="condiciones">    
+                            <img class="vector" src="assets/vector.png" alt="signo">
+                            <p class="regla">Solo letras minúsculas y sin acentos</p>
+                        </div>
+                        <div class="btn-encri-desen">
                             <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
                             <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                        </div>
                     </div>
-                    <div class="resultado">
-                        <img class="muñeco" src="assets/muñeco.png" alt="muñeco">
-                        <div class="texto-inicio">
+                    <div class="salida">
+                        <div class="img-texto-inicio">
+                            <img class="muñeco" src="assets/muñeco.png" alt="muñeco">
                             <h1 class="titulo1">Ningún mensaje fue encontrado</h1>
                             <p class="parrafo">Ingresa el texto que desees encriptar o desencriptar.<p>
                         </div>
                         <div class="texto-encriptado">
-                            <textarea class="texto-resultado" cols="29" rows="17" type="text"></textarea>
+                            <textarea class="texto-resultado" cols="35" rows="16" type="text"></textarea>
                             <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
                         </div>
                     </div>
                 </main>
+
                 <footer class="footer">
                     <div class="datos">
                         <h1 class="nombre"><strong>Mateo Corsi</strong></h1>
-                        <p class="puesto">Front End Developer</ps>
+                        <p class="puesto">Front End Developer</p>
                     </div>
                     <div class="iconos">
-                        <a href="https://www.linkedin.com/in/mateocorsi/"><img class="linkedin" src="assets/linkedin.png" alt="linkedin"></a>
-                        <a href="https://github.com/Mateofront"><img class="github" src="assets/github.png" alt="git hub"></a>
-                        <img class="email" src="assets/email.png" alt="email">
-                        <h3 class="email-direc">Mateofrontend@gmail.com</h3>
-                        <img class="telefono" src="assets/phone.png" alt="telefono">
-                        <h3 class="numero">+54 2494 24-7241</h3>
+                            <a href="https://www.linkedin.com/in/mateocorsi/">
+                            <img class="linkedin" src="assets/linkedin.png" alt="linkedin"></a>
+                            <a href="https://github.com/Mateofront">
+                            <img class="github" src="assets/github.png" alt="git hub"></a>
+                            <img class="email" src="assets/email.png" alt="email"><h3 class="email-direc">Mateofrontend@gmail.com</h3>
+                            <img class="telefono" src="assets/phone.png" alt="telefono"><h3 class="numero">+54 2494 24-7241</h3>
                     </div>
                 </footer>
                 <script src="/script.js"></script>
-            </div>
         </body>
     </html>

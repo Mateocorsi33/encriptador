@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 div > h1, h3, p , textarea {

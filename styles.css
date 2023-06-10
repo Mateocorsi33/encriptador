@@ -285,10 +285,116 @@ div > h1, h3, p , textarea {
     height: 19px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
- 
+@media only screen and (min-width: 684px) and (max-width: 1124px) {
+    .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo{
+        margin-left: 0;
+    }
+
+    .main{
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 13%;
+        margin-right: 13%;
+        gap: 2rem;
+    }
+
+    .entrada{
+        align-items: center;
+        margin-top: 2rem;
+        margin-left: 0px;
+    }
+
+    .salida{
+        width: fit-content;
+        margin: 0 1rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: fit-content;
+        width: 100%;
+        padding-top: 0.5rem;
+    }
+
+    .datos{
+        margin-left: 0px;
+    }
+
+    .iconos{
+        align-items: center;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
+    .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .entrada{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .texto{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        width: 60%;
+        resize: none;
+    }
+
+    .condiciones{
+        justify-content: center;
+    }
+
+    .btn-encri-desen{
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        height: auto;
+    }
+
+    .salida{
+        width: 70%;
+        height: auto;
+        resize: none;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
 }

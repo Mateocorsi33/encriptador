@@ -357,21 +357,20 @@ div > h1, h3, p , textarea {
         align-items: center;
     }
 
+    .logo{
+        margin-left: 0;
+    }
+
     .main{
         flex-direction: column;
         margin-top: 2rem;
-    }
-
-    .entrada{
-        justify-content: center;
-        width: 100%;
     }
 
     .texto{
         display: flex;
         flex-wrap: wrap;
         height: auto;
-        width: 60%;
+        width: 70%;
         resize: none;
     }
 
@@ -387,14 +386,39 @@ div > h1, h3, p , textarea {
     }
 
     .salida{
-        width: 70%;
+        width: 60%;
         height: auto;
         resize: none;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 18.5%;
     }
 
-    .footer{
-        flex-direction: column;
+    .texto-encriptado{
+        align-items: center;
     }
+
+    .texto-resultado{
+        height: auto;
+        width: 70%;
+        resize: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: fit-content;
+        width: 100%;
+        padding-top: 0.5rem;
+    }
+
+    .datos{
+        margin-left: 0px;
+    }
+
+    .iconos{
+        align-items: center;
+        MARGIN-LEFT: 1REM;
+        MARGIN-RIGHT: 0;
+    }
+
 }

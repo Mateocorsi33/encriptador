@@ -395,6 +395,14 @@ div > h1, h3, p , textarea {
         width: 75%;
     }
 
+    .titulo1{
+        width: 75%;
+    }
+
+    .parrafo{
+        width: 75%;
+    }
+
     .texto-encriptado{
         align-items: center;
     }

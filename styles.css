@@ -344,15 +344,10 @@ div > h1, h3, p , textarea {
 }
 
 @media only screen and (max-width: 600px) {
+
     .body{
         display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .header{
-        width: 100%;
-        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -363,14 +358,19 @@ div > h1, h3, p , textarea {
 
     .main{
         flex-direction: column;
+        align-items: center;
+        align-content: center;
         margin-top: 2rem;
     }
 
+    .entrada{
+        align-items: center;
+        margin: 0;
+    }
+
     .texto{
-        display: flex;
-        flex-wrap: wrap;
-        height: auto;
-        width: 70%;
+        width: 80%;
+        margin: 0 10%;
         resize: none;
     }
 
@@ -385,11 +385,14 @@ div > h1, h3, p , textarea {
         height: auto;
     }
 
-    .salida{
-        width: 60%;
-        height: auto;
+    .salida {
+        align-items: center;
         resize: none;
-        margin-left: 18.5%;
+        margin: 0 15%;
+    }
+
+    .img-texto-inicio{
+        width: 75%;
     }
 
     .texto-encriptado{
@@ -400,6 +403,10 @@ div > h1, h3, p , textarea {
         height: auto;
         width: 70%;
         resize: none;
+    }
+
+    .btn-copiar{
+        width: 75%;
     }
 
     .footer {
@@ -417,8 +424,31 @@ div > h1, h3, p , textarea {
 
     .iconos{
         align-items: center;
-        MARGIN-LEFT: 1REM;
-        MARGIN-RIGHT: 0;
+        gap: 2rem;
+        margin: 0.5rem 0;
     }
 
+    .linkedin{
+        margin: 0;
+    }
+
+    .github{
+        margin: 0;
+    }
+
+    .email{
+        margin: 0;
+    }
+
+    .telefono{
+        margin: 0;
+    }
+
+    .email-direc{
+        display: none;
+    }
+
+    .numero{
+        display: none;
+    }
 }

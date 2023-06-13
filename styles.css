@@ -260,6 +260,12 @@ div > h1, h3, p , textarea {
     width: 34px;
     height: 34px;
     margin-right: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.email:hover{
+    opacity: 0.6;
 }
 
 .email-direc{
@@ -269,6 +275,7 @@ div > h1, h3, p , textarea {
     color: #FFFFFF;
     margin: 0 1rem 0 0;
 }
+
 
 .telefono{
     width: 34px;
@@ -284,6 +291,7 @@ div > h1, h3, p , textarea {
     margin: 0 1rem 0 0;
     height: 19px;
 }
+
 
 @media only screen and (min-width: 684px) and (max-width: 1124px) {
     .body{
@@ -452,8 +460,18 @@ div > h1, h3, p , textarea {
         margin: 0;
     }
 
+    .email:hover{
+        cursor: pointer;
+        opacity: 0.6;
+    }
+
     .email-direc{
         display: none;
+    }
+
+    .telefono:hover{
+        cursor: pointer;
+        opacity: 0.6;
     }
 
     .numero{
